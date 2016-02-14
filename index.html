@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="Cat Clicker game">
+    <meta name="author" content="Paul Constable">
+    <title>Cat Clicker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+	<header>
+      <a href="/"><picture>
+        <source media="(max-width: 480px)" srcset="img/profilepic.jpg">
+        <img src="img/profilepic.jpg" alt="profile picture of Paul Constable">
+      </picture></a>
+      <p>Paul Constable<br><span>Online Assistant Producer</span></p>
+    </header>
+    <nav class = "navigation">
+	      <ul class= "catlist" id ="cat-list"></ul>
+	</nav>
+
+    <div id ="cat" class="cat-clicker">
+    	<h2 id ="cat-name"></h2>
+    	<p><div id="cat-count"></div></p>
+    	<img id="cat-img" src="" alt="" class="cat-img">
+    </div>
+
+    <button type ="button" id="admin">Admin</button>
+    
+    <div id="cat-note-form">
+        <form id="admin-form" class="cat-note-form">
+            <p>Cat Name:<input id="cat-note-name" class="cat-note-name"></p>
+            <p>URL:<input id="cat-note-url" class="cat-note-url"></p>
+            <p>Clicks:<input id="cat-note-clicks" class="cat-note-clicks"></p>
+        
+            <button type ="button" id="save">Save</button>
+            <button type ="button" id="cancel">Cancel</button>
+        </form>
+    </div>
+
+ 	<script src="js/app.js"></script>
+	
+</body>
