@@ -70,13 +70,15 @@ var octopus = {
     },
 
     openAdmin: function() {
+        // displays the admin input boxes and buttons
         if (model.adminShow === false) {
             model.adminShow = true;
-            adminView.show(); //displays the admin input boxes and buttons
+            adminView.show(); 
         }
+        // hides the admin input boxes and buttons
         else if (model.adminShow === true) {
             model.adminShow = false;
-            adminView.hide();// hides the admin input boxes and buttons
+            adminView.hide();
         }
         adminView.render();
     },
@@ -123,7 +125,7 @@ var viewCat = {
 };
 
 var viewCatList = {
-    // Get the HTML ID for access late
+    // Get the HTML ID for access later
     init: function () {
         this.catList = document.getElementById('cat-list');
     // render this to update correct elements in HTML
@@ -160,6 +162,7 @@ var viewCatList = {
 var adminView = {
 
     init: function() {
+        // Store elements for DOM later
         adminCatName = document.getElementById("cat-note-name");
         adminCatClicks = document.getElementById("cat-note-clicks");
         adminCatURL = document.getElementById("cat-note-url");
@@ -195,11 +198,13 @@ var adminView = {
     },
 
     show: function(){
+        // Opens and shows the form in view
         var catNote = document.getElementById('cat-note-form');
         catNote.style.display = 'block';
     },
         
     hide: function(){
+        // Hides the form in view
         var catNote = document.getElementById('cat-note-form');
         catNote.style.display = 'none';
     }
